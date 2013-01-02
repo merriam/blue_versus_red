@@ -1,7 +1,5 @@
-CHANGES:  Adding the crafty.js and crafty-min.js files
+CHANGES:  Adding the game.html and game.js files
 
-Your webpages references crafty.js as a JavaScript library stored as plain text.  The library runs about 5,000 lines of cryptic code and 5,000 of comments that generate the reference manual (http://http://craftyjs.com/api/).  This crafty.js should be the latest version downloaded from http://craftyjs.com.
+Added game.html as the HTML5 page that calls your javascript game named game.js.  In game.js, you will write your game but it fails in this version because of a missing reference 'foobar'.  
 
-The file craftyjs-min.txt is 'minimized' from crafty.js by taking out comments, indents, and shortening variable names to make a faster download from production sites.
-
-You can explore the github repository (https://github.com/craftyjs/Crafty) for more details on minimizing, current bugs, and building the reference manual.
+This would be a good time to learn how to launch the browser from your editor and to find the Javascript debugger from your browser.

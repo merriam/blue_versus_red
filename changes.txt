@@ -1,5 +1,7 @@
-CHANGES:  Adding the game.html and game.js files
+CHANGES:  Add red and blue block entities with components for display and movement. 
 
-Added game.html as the HTML5 page that calls your javascript game named game.js.  In game.js, you will write your game but it fails in this version because of a missing reference 'foobar'.  
+The play area now has a yellow background.   Then I added two "entities":  red block and blue block.  The components add sets of behaviors to each block.  The red block has these components: 2D to make it a 2D object on the canvas and to give it the x, y, h (height), and w (width) attributes; DOM to animate using a DIV in the DOM; and Color to give it a color and the color() method.   The blue block also has multiway to give the block movement in four directions including mashing keys for diagonals.
 
-This would be a good time to learn how to launch the browser from your editor and to find the Javascript debugger from your browser.
+Also added a yellow background to the game area.
+
+

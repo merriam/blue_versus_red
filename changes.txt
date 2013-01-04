@@ -1,7 +1,7 @@
-CHANGES:  Add red and blue block entities with components for display and movement. 
+CHANGES:  Add collision for blue block hits red block.
 
-The play area now has a yellow background.   Then I added two "entities":  red block and blue block.  The components add sets of behaviors to each block.  The red block has these components: 2D to make it a 2D object on the canvas and to give it the x, y, h (height), and w (width) attributes; DOM to animate using a DIV in the DOM; and Color to give it a color and the color() method.   The blue block also has multiway to give the block movement in four directions including mashing keys for diagonals.
+When the blue block hits the red block, the collision is detected and the blue block is returned to its starting point.  The empty component name "Blueable" is added to the red block.  The blue block uses the Crafty Collision component and references Blueable in the onHit() check.
 
-Also added a yellow background to the game area.
+This is the final basic game from which all other games are mere enhancements.
 
 

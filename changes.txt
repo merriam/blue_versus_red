@@ -1,7 +1,3 @@
-CHANGES:  Add collision for blue block hits red block.
+CHANGES:  Display
 
-When the blue block hits the red block, the collision is detected and the blue block is returned to its starting point.  The empty component name "Blueable" is added to the red block.  The blue block uses the Crafty Collision component and references Blueable in the onHit() check.
-
-This is the final basic game from which all other games are mere enhancements.
-
-
+The score increases on each collision.  This is a simple text entity, setting its property initially and in the onHit() function.  Note the text justifies to the shortest width, changing the word break as the score gets larger.

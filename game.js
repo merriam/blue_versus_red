@@ -12,7 +12,12 @@ window.onload = function() {
 				.color("blue")
 				.attr({w: 60, h: 60, x:70, y:200})
 				.onHit("Blueable", 
-					function () { this.attr({x: 70, y:200}); }
-				);
-	
+					function () { 
+						this.attr({x: 70, y:200});
+						score = 1 + score * 20;
+						eScore.text("Score is " + score);
+					}
+				),
+		score = 0,
+		eScore = Crafty.e("2D, DOM, Text").attr({x:0, y:0}).text("Score is 0")
 };
